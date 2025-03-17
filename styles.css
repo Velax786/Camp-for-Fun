@@ -1,0 +1,180 @@
+/* Reset some default styles */
+body, h1,h2 p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added for better layout control */
+    font-family: Rogfont; /* Set default font for better readability */
+    
+}
+
+
+h1
+{
+    color: rgb(248, 249, 251);
+}
+
+h2
+{
+    text-align: center;
+    color: black;
+    font-family: Rogfont;
+    font-size: 39px;
+    font: larger;
+}
+
+h3
+{
+    font-family: Arial, sans-serif;
+    font: bold;
+    text-align: center;
+}
+
+/* Basic styling */
+body {
+    line-height: 1.6;
+}
+
+header {
+    background: #f9fcf8; /* Darker background for better contrast */
+    color: orange;
+    padding: 1px 0; /* Increased padding for a more spacious look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0  20px;
+}
+
+nav .logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+    
+}
+
+nav ul li a {
+    color: rgb(8, 8, 8); /* Changed link color to black for better visibility */
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
+    font-size: 20px;
+}
+
+
+nav ul li a:hover {
+    color: rgb(170, 167, 162); /* Highlight color on hover */
+}
+
+.hero {
+    position: relative; /* Set position for absolute elements */
+    color: #e91717;
+    text-align: center;
+    padding: 150px 20px; /* Increased padding for a more impactful hero section */
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); /* Added shadow for depth */
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire hero section */
+    z-index: 0; /* Send video behind other content */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1; /* Place overlay above video */
+}
+
+.products {
+    padding: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+          
+}
+
+.product {
+    border: 1px solid #1b1a1a; /* Darker border for a more modern look */
+    border-radius: 8px; /* Rounded corners for a softer appearance */
+    padding: 20px; /* Increased padding for better spacing */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth scaling effect on hover */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 15px rgba(18, 15, 15, 0.2); /* Add shadow on hover */
+}
+
+.product h1,h2,h3,h4,h5
+{
+    font-family: Rogfont;
+    font-size: 25px;
+    color:black ;
+    text-align: center;
+}
+
+.about
+{
+    font-size: 30px;
+    text-align: center;
+    margin: 10%;
+
+}
+
+.about h2
+{
+    font-size: 100%;
+}
+
+@font-face {
+    font-family: Rogfont;
+    src: url(img/DUSHICK\ demo\ teksture.otf);
+}
+
+
+
+footer 
+    {
+        text-align: center;
+        padding: 10px;
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        font-family: Rogfont;
+        font-size: large;
+        
+
+
+    }
+    
+    footer .social-media 
+    {
+        margin-top: 10px;
+    }
+    
+    footer .social-media a 
+    {
+        color: rgb(255, 254, 254);
+        margin: 0 10px;
+        text-decoration: none;
+    }
